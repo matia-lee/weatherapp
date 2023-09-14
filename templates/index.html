@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <h1 class="mt-5">theweatherapp.</h1>
+    </div>
+    <div class="form_container">
+      <form action="/" method="POST">
+        <input
+          type="text"
+          id="cityName"
+          name="cityName"
+          placeholder="city"
+          value="{{ request.form['cityName'] }}"
+        />
+        <input
+          type="text"
+          id="state/province/territoryName"
+          name="state/province/territoryName"
+          placeholder="state/province/territory"
+          value="{{ request.form['state/province/territoryName'] }}"
+        />
+        <input
+          type="text"
+          id="countryName"
+          name="countryName"
+          placeholder="country"
+          value="{{ request.form['countryName'] }}"
+        />
+        <button class="search_button">search!</button>
+      </form>
+    </div>
+    {% if data %}
+    <table style="width: 50%" class="mega_container">
+      <tr>
+        <td class="information_container">
+          <img
+            src="https://openweathermap.org/img/wn/{{data.icon}}@2x.png"
+            alt="weather icon"
+          />
+        </td>
+        <td class="information_container">{{ data.temperature }}</td>
+        <td class="information_container">{{ data.feels_like }}</td>
+        <td class="information_container">{{ data.description }}</td>
+        <td class="information_container">{{ data.humidity }}</td>
+      </tr>
+      <tr>
+        <td class="information_subcontainer"><h2>icon</h2></td>
+        <td class="information_subcontainer"><h2>temperature</h2></td>
+        <td class="information_subcontainer"><h2>feels like</h2></td>
+        <td class="information_subcontainer"><h2>description</h2></td>
+        <td class="information_subcontainer"><h2>humidity</h2></td>
+      </tr>
+    </table>
+    {% endif %}
+  </body>
+</html>
+

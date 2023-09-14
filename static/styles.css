@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Roboto&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Outfit:wght@500;600;700&family=Roboto&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Outfit:wght@500;600;700&family=Roboto&family=Rubik:wght@300&family=Ubuntu:wght@700&display=swap');
+
+
+body {
+    background-color: #CEDEF8;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.search_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search_button {
+    height: 30px;
+    width: 75px;
+    border-radius: 40px;
+    background-color: aliceblue;
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    border: solid 2px grey;
+}
+
+.search_button:hover {
+    background-color: #CCDEE5;
+}
+
+
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: #003264;
+}
+
+.form_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 00px;
+}
+
+
+.form_container input[type="text"] {
+    font-size: 15px; 
+    padding: 10px;   
+    margin: 5px;   
+    border-radius: 20px;
+    border: solid 2px #6382b9;
+}
+
+.information_container{
+    /* display: flex; */
+    margin-top: 0px;
+    font-family: 'Kanit', 'sans-serif';
+    align-items: center;
+    font-size: 30px;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    width: 16%;
+    margin-left: 100px;
+}
+
+.information_subcontainer {
+    justify-content: center;
+    width: 16%;
+    align-items: center;
+    font-size: 10px;
+    font-family: 'Rubik', 'sans-serif';
+    color: #6382B9;
+    margin-top: -75px;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.mega_container{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
