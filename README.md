@@ -14,4 +14,4 @@
 2. Copy the Repository URL by clicking the green "Code" button
 3. Open terminal and navigate to the main directory by entering 'cd'
 4. Run 'python3 app.py' in terminal
-5. Copy the http link into your browser
+5. Copy the http link into your browser 
