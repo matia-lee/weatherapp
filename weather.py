@@ -6,7 +6,7 @@ from dataclasses import dataclass
 
 
 load_dotenv()
-api_key = os.getenv("API_KEY")
+api_key = os.getenv("weather_app_api_key")
 
 @dataclass
 class WeatherData:
