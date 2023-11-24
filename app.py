@@ -7,7 +7,6 @@ app = Flask(__name__)
 def index():
     data = None
     if request.method == 'POST':
-        # try: poo poo poo
         city = request.form['cityName']
         state_province_territory = request.form['state/province/territoryName']
         country = request.form['countryName']
